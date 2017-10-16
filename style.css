@@ -1,17 +1,40 @@
 header {
   display: flex;
   align-items: center;
-  position: fixed;
   border-bottom: 1px solid black;
   width: 100%;
+  position: fixed;
+  z-index: 10;
   height: 80px;
   font-family: verdana;
   font-size: 14px;
+  background-color: white;
   font-weight: bold;
+
+}
+
+body {
+  display: block;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 a {
   color: black;
+}
+
+p {
+  display: block;
+}
+
+h2 {
+  display: block;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  font-weight: bold;
 }
 
 nav span {
@@ -24,9 +47,18 @@ header nav {
   float: right;
   margin-right: 40px;
 }
+div{
+  display: block;
+  border: 1px solid black;
+}
+
+div.story {
+
+}
 
 .logo {
   display: flex;
+  position: relative;
   flex-grow: 1;
   align-items: center;
   margin-left: 30px;
@@ -43,4 +75,65 @@ header nav {
   cursor: auto;
   text-decoration: underline;
   margin-right: 40px;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 0px;
+  font-family: georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.lead-story .images {
+  background-image: url("pictures/MainStory.png");
+  width: 630px;
+  font-size: 40px;
+  text-align: left;
+}
+
+.earth.images {
+  background-image: url("pictures/FallSeason.png");
+}
+
+.research.images {
+  background-image: url("pictures/HipsterCameraMan.png");
+}
+
+.cats.images {
+  background-image: url("pictures/CatCEO.png");
+}
+
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+  z-index: 5;
+  overflow: auto;
+  font-family: georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.left {
+  width: 630px;
+}
+
+.column.middle {
+  width: 300px;
+}
+
+.column.right {
+  width: 240px;
 }
