@@ -61,7 +61,10 @@ p {
 h2 {
   display: block;
   font-weight: bold;
-  font-size: 1.22em;
+  font-size: 30px;
+  font-style: normal;
+  font-family: georgia;
+  margin: 0 auto;
 }
 
 h3 {
@@ -123,6 +126,7 @@ div{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   height: 300px;
   margin-top: 0px;
   font-family: georgia;
@@ -136,6 +140,10 @@ div{
   width: 630px;
   font-size: 40px;
   text-align: left;
+}
+
+.lead-story .images p {
+  margin-left: 20px;
 }
 
 .earth.images {
